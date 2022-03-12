@@ -54,7 +54,7 @@ ROOT_URLCONF = 'TESTDB.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/atang/PycharmProjects/TESTDB/TESTDB/TESTDB/Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

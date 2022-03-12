@@ -1,0 +1,37 @@
+<html>
+    <body>
+
+    {% include "superior/barra.html" %}
+
+    <h1>Hola Mundo Esta Es la plantilla</h1>
+
+    {% if nombre_persona == ' Alumno Jaime' %}
+
+    <p>El curso lo imparte el profesor titutlar</p>
+
+    {% endif %}
+
+    <p>El nombre del alumno es : {{nombre_persona}} {{apellido_persona}}</p>
+    <p>LA fecha actual es : {{fecha_actual}} / {{fecha_actual.day}} / {{fecha_actual.month}} / {{fecha_actual.year}}</p>
+    <p>{{temas.1}}</p>
+    <p>{{temas.2}}</p>
+    <p>{{temas.3}}</p>
+    <p>
+        <ul>
+        {% if temas %}
+            {% for elTema in temas%}
+
+                <li>{{elTema}}</li>
+
+            {% endfor %}
+        {% else %}
+            <p>no hay elementos que mostrar</p>
+        {% endif %}
+         </ul>
+    </p>
+
+
+
+
+    </body>
+</html>
